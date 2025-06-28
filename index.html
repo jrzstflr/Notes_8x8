@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jrz Notes Template</title>
@@ -713,7 +711,7 @@
         </div>
         
         <div class="digital-clock-container">
-            <div class="digital-clock" id="digitalClock">00:00:00 AM</div>
+            <div class="digital-clock" id="digitalClock" style="color: rgb(38, 128, 217);">05:59:46 PM</div>
             <div class="timezone-label" id="timezoneLabel">UTC</div>
             <select id="timezoneSelect" onchange="updateTimezone()">
                 <option value="UTC">UTC</option>
@@ -775,6 +773,7 @@
                     <option value="">📞 Contact Directory</option>
                     <option value="C4334410">Sales Master Case</option>
                     <option value="+44 207 096 6060">🇬🇧 8x8 Support UK</option>
+                    <option value="+1 408 956 6055">🇬🇧 8x8 Billing UK</option>
                     <option value="+44 333 043 8888">🇬🇧 8x8 Sales UK</option>
                     <option value="+1 866-879-8647">🇺🇸 8x8 Sales US</option>
                     <option value="+1 888-898-8733">🇺🇸 Main 8x8 Customer Support</option>
@@ -784,45 +783,47 @@
                     <option value="+1 669-268-0538">🇺🇸 Tier 1 Premium</option>
                     <option value="+1 408-775-7439">🇺🇸 Enterprise Tech Support</option>
                     <option value="+1 669-900-5556">🇺🇸 Tier 2 Support</option>
-                    <option value="+1 408-675-5141">🇺🇸 LNP Internal Transfer</option>
+                    <option value="+1-206-337-6903">🇺🇸 Advanced Support</option>
+                    <option value="+1-206-337-6901">🇺🇸 LNP Internal Transfer</option>
                     <option value="+1 805-754-3342">🇺🇸 Tier 1 Billing</option>
                     <option value="+1 408-956-6055">🇺🇸 Enterprise Billing</option>
                     <option value="+1-669-900-5539">🇺🇸 Global Cancellations</option>
+                    <option value="+1-669-299-2853">🇺🇸 FUZE</option>
                 </select>
             </div>
             
             <div class="input-container">
-                <input type="text" id="resultTextbox" readonly aria-label="Selected Contact">
+                <input type="text" id="resultTextbox" readonly="" aria-label="Selected Contact">
             </div>
 
             <div class="input-container">
-                <input type="text" id="mcn" name="MCN or Case ID" placeholder=" " required>
+                <input type="text" id="mcn" name="MCN or Case ID" placeholder=" " required="">
                 <label for="mcn">MCN or Case ID</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="transactionId" name="Transaction ID" placeholder=" " required>
+                <input type="text" id="transactionId" name="Transaction ID" placeholder=" " required="">
                 <label for="transactionId">Transaction ID</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="contactName" name="Contact Name" placeholder=" " required>
+                <input type="text" id="contactName" name="Contact Name" placeholder=" " required="">
                 <label for="contactName">Contact Name</label>
             </div>
 
             <div class="input-container">
-                <input type="email" id="email" name="Email Address" placeholder=" " required>
+                <input type="email" id="email" name="Email Address" placeholder=" " required="">
                 <label for="email">Email Address</label>
             </div>
 
             <div class="input-container">
-                <input type="tel" id="callBackNumber" name="Call Back Number" placeholder=" " required>
+                <input type="tel" id="callBackNumber" name="Call Back Number" placeholder=" " required="">
                 <label for="callBackNumber">Call Back Number</label>
             </div>
 
             <div class="input-container">
-                <select id="passphraseVerification" name="Security Passphrase Verification Needed" required>
-                    <option value="" disabled selected></option>
+                <select id="passphraseVerification" name="Security Passphrase Verification Needed" required="">
+                    <option value="" disabled="" selected=""></option>
                     <option value="Yes">✅ Yes</option>
                     <option value="Yes w/ OTP">✅ Yes w/ OTP</option>
                     <option value="No">❌ No</option>
@@ -832,8 +833,8 @@
             </div>
 
             <div class="input-container">
-                <select id="passphraseVerified" name="Security Passphrase Verified" required>
-                    <option value="" disabled selected></option>
+                <select id="passphraseVerified" name="Security Passphrase Verified" required="">
+                    <option value="" disabled="" selected=""></option>
                     <option value="Yes">✅ Yes</option>
                     <option value="Yes w/ OTP">✅ Yes w/ OTP</option>
                     <option value="No">❌ No</option>
@@ -843,32 +844,32 @@
             </div>
 
             <div class="input-container">
-                <input type="text" id="pbx" name="PBX" placeholder=" " required>
+                <input type="text" id="pbx" name="PBX" placeholder=" " required="">
                 <label for="pbx">PBX</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="symptom" name="Symptom" placeholder=" " required>
+                <input type="text" id="symptom" name="Symptom" placeholder=" " required="">
                 <label for="symptom">Symptom</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="issue" name="Issue" placeholder=" " required>
+                <input type="text" id="issue" name="Issue" placeholder=" " required="">
                 <label for="issue">Issue</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="resolution" name="Resolution" placeholder=" " required>
+                <input type="text" id="resolution" name="Resolution" placeholder=" " required="">
                 <label for="resolution">Resolution</label>
             </div>
 
             <div class="input-container">
-                <textarea id="troubleshootingSteps" name="Troubleshooting Steps" rows="5" placeholder=" " required></textarea>
+                <textarea id="troubleshootingSteps" name="Troubleshooting Steps" rows="5" placeholder=" " required=""></textarea>
                 <label for="troubleshootingSteps">Troubleshooting Steps</label>
             </div>
 
             <div class="button-container">
-                <button type="button" onclick="copyNote()">📋 Copy & Save</button>
+                <button type="button" onclick="copyNote()">📋 Copy &amp; Save</button>
                 <button type="button" onclick="resetForm()">🔄 Reset Form</button>
                 <button type="button" onclick="autoFillSample()">🎯 Sample Data</button>
             </div>
@@ -878,27 +879,27 @@
     <div id="outboundTab" class="tab-content">
         <form id="outboundForm" class="glass-container">
             <div class="input-container">
-                <input type="text" id="outboundContactName" placeholder=" " required>
+                <input type="text" id="outboundContactName" placeholder=" " required="">
                 <label for="outboundContactName">Contact Name Called</label>
             </div>
 
             <div class="input-container">
-                <input type="tel" id="outboundContactPhone" placeholder=" " required>
+                <input type="tel" id="outboundContactPhone" placeholder=" " required="">
                 <label for="outboundContactPhone">Contact Phone Number Dialed</label>
             </div>
 
             <div class="input-container">
-                <input type="email" id="outboundEmail" placeholder=" " required>
+                <input type="email" id="outboundEmail" placeholder=" " required="">
                 <label for="outboundEmail">Contact Email Address</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="vccTransId" placeholder=" " required>
+                <input type="text" id="vccTransId" placeholder=" " required="">
                 <label for="vccTransId">VCC Trans ID</label>
             </div>
 
             <div class="input-container">
-                <textarea id="outboundUpdate" rows="5" placeholder=" " required></textarea>
+                <textarea id="outboundUpdate" rows="5" placeholder=" " required=""></textarea>
                 <label for="outboundUpdate">Update/Troubleshooting</label>
             </div>
 
@@ -913,58 +914,58 @@
     <div id="t2TemplateTab" class="tab-content">
         <form id="t2Form" class="glass-container">
             <div class="input-container">
-                <input type="text" id="parentAccount" name="Parent Account" placeholder=" " required>
+                <input type="text" id="parentAccount" name="Parent Account" placeholder=" " required="">
                 <label for="parentAccount">Parent Account</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="pbxName" name="PBX Name" placeholder=" " required>
+                <input type="text" id="pbxName" name="PBX Name" placeholder=" " required="">
                 <label for="pbxName">PBX Name</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="t2ContactName" name="Contact Name" placeholder=" " required>
+                <input type="text" id="t2ContactName" name="Contact Name" placeholder=" " required="">
                 <label for="t2ContactName">Contact Name</label>
             </div>
 
             <div class="input-container">
-                <input type="tel" id="t2CallBackNumber" name="Call Back Number" placeholder=" " required>
+                <input type="tel" id="t2CallBackNumber" name="Call Back Number" placeholder=" " required="">
                 <label for="t2CallBackNumber">Call Back Number</label>
             </div>
 
             <div class="input-container">
-                <input type="email" id="t2Email" name="Email Address" placeholder=" " required>
+                <input type="email" id="t2Email" name="Email Address" placeholder=" " required="">
                 <label for="t2Email">Email Address</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="contactTimeZone" name="Contact Time Zone" placeholder=" " required>
+                <input type="text" id="contactTimeZone" name="Contact Time Zone" placeholder=" " required="">
                 <label for="contactTimeZone">Contact Time Zone</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="leadApproval" name="Lead Approval" placeholder=" " required>
+                <input type="text" id="leadApproval" name="Lead Approval" placeholder=" " required="">
                 <label for="leadApproval">Lead Approval</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="t2Symptom" name="Symptom" placeholder=" " required>
+                <input type="text" id="t2Symptom" name="Symptom" placeholder=" " required="">
                 <label for="t2Symptom">Symptom</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="t2Issue" name="Issue" placeholder=" " required>
+                <input type="text" id="t2Issue" name="Issue" placeholder=" " required="">
                 <label for="t2Issue">Issue</label>
             </div>
 
             <div class="input-container">
-                <input type="text" id="t2Resolution" name="Resolution" placeholder=" " required>
+                <input type="text" id="t2Resolution" name="Resolution" placeholder=" " required="">
                 <label for="t2Resolution">Resolution</label>
             </div>
 
             <div class="input-container">
-                <select id="canReplicate" name="Can the agent replicate the issue?" required>
-                    <option value="" disabled selected></option>
+                <select id="canReplicate" name="Can the agent replicate the issue?" required="">
+                    <option value="" disabled="" selected=""></option>
                     <option value="Yes">✅ Yes</option>
                     <option value="No">❌ No</option>
                     <option value="Partially">⚠️ Partially</option>
@@ -973,7 +974,7 @@
             </div>
 
             <div class="input-container">
-                <textarea id="t2TroubleshootingSteps" name="Troubleshooting Steps" rows="5" placeholder=" " required></textarea>
+                <textarea id="t2TroubleshootingSteps" name="Troubleshooting Steps" rows="5" placeholder=" " required=""></textarea>
                 <label for="t2TroubleshootingSteps">Troubleshooting Steps</label>
             </div>
 
@@ -1033,33 +1034,33 @@
     <!-- Enhanced Modal -->
     <div id="editNoteModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-content">
-            <span class="close" aria-label="Close modal">&times;</span>
+            <span class="close" aria-label="Close modal">×</span>
             <h2 id="modalTitle">✏️ Edit Note</h2>
             <form id="editNoteForm">
                 <input type="hidden" id="editNoteIndex">
                 <div class="input-container">
-                    <input type="text" id="editMcn" placeholder=" " required>
+                    <input type="text" id="editMcn" placeholder=" " required="">
                     <label for="editMcn">MCN or Case ID</label>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="editTransactionId" placeholder=" " required>
+                    <input type="text" id="editTransactionId" placeholder=" " required="">
                     <label for="editTransactionId">Transaction ID</label>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="editContactName" placeholder=" " required>
+                    <input type="text" id="editContactName" placeholder=" " required="">
                     <label for="editContactName">Contact Name</label>
                 </div>
                 <div class="input-container">
-                    <input type="email" id="editEmail" placeholder=" " required>
+                    <input type="email" id="editEmail" placeholder=" " required="">
                     <label for="editEmail">Email Address</label>
                 </div>
                 <div class="input-container">
-                    <input type="tel" id="editCallBackNumber" placeholder=" " required>
+                    <input type="tel" id="editCallBackNumber" placeholder=" " required="">
                     <label for="editCallBackNumber">Call Back Number</label>
                 </div>
                 <div class="input-container">
-                    <select id="editPassphraseVerification" required>
-                        <option value="" disabled selected></option>
+                    <select id="editPassphraseVerification" required="">
+                        <option value="" disabled="" selected=""></option>
                         <option value="Yes">✅ Yes</option>
                         <option value="Yes w/ OTP">✅ Yes w/ OTP</option>
                         <option value="No">❌ No</option>
@@ -1068,8 +1069,8 @@
                     <label for="editPassphraseVerification">Security Passphrase Verification Needed</label>
                 </div>
                 <div class="input-container">
-                    <select id="editPassphraseVerified" required>
-                        <option value="" disabled selected></option>
+                    <select id="editPassphraseVerified" required="">
+                        <option value="" disabled="" selected=""></option>
                         <option value="Yes">✅ Yes</option>
                         <option value="Yes w/ OTP">✅ Yes w/ OTP</option>
                         <option value="No">❌ No</option>
@@ -1078,23 +1079,23 @@
                     <label for="editPassphraseVerified">Security Passphrase Verified</label>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="editPbx" placeholder=" " required>
+                    <input type="text" id="editPbx" placeholder=" " required="">
                     <label for="editPbx">PBX</label>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="editSymptom" placeholder=" " required>
+                    <input type="text" id="editSymptom" placeholder=" " required="">
                     <label for="editSymptom">Symptom</label>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="editIssue" placeholder=" " required>
+                    <input type="text" id="editIssue" placeholder=" " required="">
                     <label for="editIssue">Issue</label>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="editResolution" placeholder=" " required>
+                    <input type="text" id="editResolution" placeholder=" " required="">
                     <label for="editResolution">Resolution</label>
                 </div>
                 <div class="input-container">
-                    <textarea id="editTroubleshootingSteps" rows="5" placeholder=" " required></textarea>
+                    <textarea id="editTroubleshootingSteps" rows="5" placeholder=" " required=""></textarea>
                     <label for="editTroubleshootingSteps">Troubleshooting Steps</label>
                 </div>
                 <button type="submit">💾 Save Changes</button>
@@ -1108,17 +1109,27 @@
 
         // Enhanced message system
         function showMessage(text, type = 'success') {
-            const container = document.getElementById('messageContainer');
-            const message = document.createElement('div');
-            message.className = `message ${type}`;
-            message.textContent = text;
-            container.appendChild(message);
-            
-            if (messageTimeout) clearTimeout(messageTimeout);
-            messageTimeout = setTimeout(() => {
-                message.remove();
-            }, 3000);
-        }
+    const container = document.getElementById('messageContainer');
+
+    // Prevent duplicate messages
+    const existing = Array.from(container.children).find(
+        el => el.textContent === text && el.classList.contains(type)
+    );
+    if (existing) {
+        existing.remove(); // Remove old identical message
+    }
+
+    // Create new message
+    const message = document.createElement('div');
+    message.className = `message ${type}`;
+    message.textContent = text;
+    container.appendChild(message);
+
+    // Auto-remove this message after 1 second
+    setTimeout(() => {
+        message.remove();
+    }, 1000);
+}
 
         // Enhanced night mode toggle
         function toggleNightMode() {
@@ -1825,6 +1836,8 @@ function deleteAllNotes() {
     document.getElementById("searchInput").value = '';
 }
     </script>
-</body>
 
+
+
+</body></html>
 </html>
